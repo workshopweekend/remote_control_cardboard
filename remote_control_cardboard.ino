@@ -1,7 +1,8 @@
-/*
-  Motor Tester
-  Scaffolding to figure out motor directions.
- */
+/**
+  Remote Control Motor Driver
+  
+  Set two motor pins based on input from an infrared remote control.
+ **/
 
 #include <IRremote.h>
 
@@ -62,17 +63,24 @@ void halt() {
 void loop() {
   if (receiver.decode(&results)) {
     Serial.println(results.value, HEX);
+
     if (results.value == 0xABCD) {
+      Serial.println("FORWARD");
       forward();
     } else if (results.value == 0xDCBA) {
+      Serial.println("REVERSE");
       reverse();
     } else if (results.value == 0x1234) {
+      Serial.println("LEFT");
       left();
     } else if (results.value == 0x4321) {
+      Serial.println("RIGHT");
       right();
     } else if (results.value == 0x0000) {
+      Serial.println("HALT");
       halt();
     }
+
     receiver.resume();
   }
 }

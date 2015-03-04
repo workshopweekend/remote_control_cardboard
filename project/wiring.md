@@ -6,4 +6,4 @@ Use alligator clips to connect the motors, one end clipped to a motor lead, and 
 
 ![Data sheet excerpt dim=300h](tsop.png)
 
-In this sheet, pin `V<sub>S</sub>` should be connected to 5V, pin `GND` to ground, and `OUT` to Arduino digital pin 2.
+In this sheet, pin `V<sub>S</sub>` should be connected to 5V, pin `GND` to ground, and `OUT` to Arduino digital pin 2. Use the values in your sheet to connect the correct pins!

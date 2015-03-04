@@ -1,0 +1,1 @@
+There are a few steps needed to get your cardboard box to respond to your remote control. 
