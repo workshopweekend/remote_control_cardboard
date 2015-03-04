@@ -1,6 +1,6 @@
 1.  Wire up your Arduino as shown in the image below:
 
-    ![Fritzing diagram dim=400h](arduino_driver_motors_ir.png)
+    ![Fritzing diagram dim=400wL](arduino_driver_motors_ir.png "Fritzing diagram of motors, a driver, and IR receiver")     ![Schematic diagram dim=400wL](arduino_driver_motors_ir_schem.png "Schematic diagram of motors, a driver, and IR receiver")
 
 2.  Use alligator clips to connect the motors, one end clipped to a motor lead, and the other end clipped to a jumper wire.
 
